@@ -22,23 +22,6 @@
 1. 자바스크립트에서 원시값(primitive value)을 객체처럼 다룰 수 있게 해주는 임시 객체이다.
 2. 원시값을 객체처럼 다룰 수 있게 일시적으로 감싸주는 객체
 
-### 예시: 문자열
-
-```jsx
-const str = "hello";
-
-// 내부 동작 (자동 변환 과정)
-const temp = new String(str);
-temp.toUpperCase(); // "HELLO"
-temp is removed after use
-
-```
-
-즉,
-
-- `"hello"` → **new String("hello")** 로 잠깐 변환
-- 메서드 실행 후 → **다시 원시값으로 복귀**
-
 ## 전역 객체란?
 
 어디서든 접근할 수 있는, 최상위 객체
