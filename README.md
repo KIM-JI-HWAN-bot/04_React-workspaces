@@ -19,7 +19,7 @@
 
 ## 래퍼 객체(Wrapper Object)
 
-원시값(Primitive Value)을 객체(Object)로 감싼 것
+자바스크립트에서 원시값(primitive value)을 객체처럼 다룰 수 있게 해주는 임시 객체이다.
 
 ## 원시값 래퍼 객체
 
