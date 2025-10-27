@@ -2,6 +2,7 @@ import React from "react";
 
 function Example2() {
   const [isCheckd, setIsCheckd] = React.useState(false);
+
   return (
     <>
       <h2>체크박스와 stat</h2>

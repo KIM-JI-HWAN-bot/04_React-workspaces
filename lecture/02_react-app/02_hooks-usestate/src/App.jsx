@@ -1,10 +1,10 @@
 import React from "react";
-// import Example1 from "./components/Example1";
+import Example1 from "./components/Example1";
 import Example2 from "./components/Example2";
 import Example3 from "./components/Example3";
 import Example4 from "./components/Example4";
 import Example6 from "./components/Example6";
-// import Example5 from "./components/Example5";
+import Example5 from "./components/Example5";
 
 function App() {
   const [number, setNumber] = React.useState(0); // [ state의 초기값 , state를 변경시켜주는 함수 ]
@@ -24,11 +24,11 @@ function App() {
         <button onClick={handleDecerease}>▽</button>
       </div>
       <hr />
-      {/* <Example1 /> */}
+      <Example1 />
       <Example2 />
       <Example3 />
       <Example4 />
-      {/* <Example5 /> */}
+      <Example5 />
       <Example6 />
     </>
   );
