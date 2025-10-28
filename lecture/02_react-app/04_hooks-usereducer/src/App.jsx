@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Example1 from "./components/Example1";
 import Example2 from "./components/Example2";
+import ATM from "./components/ATM";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Example1 />
       <hr />
       <Example2 />
+      <ATM />
     </>
   );
 }
