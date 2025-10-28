@@ -1,19 +1,43 @@
 import React, { useState } from "react";
 
 function Example2() {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState({ name: "", age: 0, email: "" });
+  const [name, setName] = useState("");
+
   const handleUserChange = (e) => {
-    setUser(e.target.value);
+    const type = e.target.name;
+
+    if (type === "name") {
+      // 이름 관련 처리
+      setUser((prev) => {
+        return { ...prev, name: e.target.value };
+      });
+    } else if (type === "age") {
+    } else if (type === "email") {
+    }
   };
+
+  const handleChangeUserName = (e) => {
+    setName(e.target.value);
+  };
+
   return (
     <>
       <h2>사용자 정보</h2>
-      <input type="text" value={user} onChange={handleUserChange} />
-      <input type="number" value={user} onChange={handleUserChange} />
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => handleChangeUserName(e)}
+      />
+      <input
+        type="number"
+        name="age"
+        value={user.age}
+        onChange={handleUserChange}
+      />
       <input type="email" />
 
       <h4>프로필</h4>
-      <h5>{user}</h5>
     </>
   );
 }
